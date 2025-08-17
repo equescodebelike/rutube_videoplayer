@@ -5,14 +5,14 @@ import 'dart:ui_web' as ui_web;
 
 /// Web video player for HTML5 video playback using iframe
 class WebVideoPlayer extends StatefulWidget {
-  final String videoUrl;
-  final double aspectRatio;
-
   const WebVideoPlayer({
-    Key? key,
+    super.key,
     required this.videoUrl,
     this.aspectRatio = 16 / 9,
-  }) : super(key: key);
+  });
+
+  final String videoUrl;
+  final double aspectRatio;
 
   @override
   State<WebVideoPlayer> createState() => _WebVideoPlayerState();
@@ -51,7 +51,7 @@ class _WebVideoPlayerState extends State<WebVideoPlayer> {
           return iframe;
         },
       );
-      setState(() {}); // Перестроить виджет с новым viewType
+      setState(() {});
     }
   }
 
@@ -85,4 +85,4 @@ String parseUrlForRutubeAndVKPlayers(String url) {
     return url;
   }
   return '';
-} 
+}

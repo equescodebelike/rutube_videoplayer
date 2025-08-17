@@ -2,14 +2,14 @@ import 'package:flutter/widgets.dart';
 
 /// Web video player stub for non-web platforms
 class WebVideoPlayer extends StatelessWidget {
+  const WebVideoPlayer({
+    super.key,
+    required this.videoUrl,
+    required this.aspectRatio,
+  });
+
   final String videoUrl;
   final double aspectRatio;
-
-  const WebVideoPlayer({
-    Key? key,
-    required this.videoUrl,
-    this.aspectRatio = 16 / 9,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) => const SizedBox.shrink();
@@ -36,4 +36,4 @@ String parseUrlForRutubeAndVKPlayers(String url) {
     return url;
   }
   return '';
-} 
+}
