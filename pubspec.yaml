@@ -1,6 +1,6 @@
 name: rutube_videoplayer
 description: "A Flutter package for playing Rutube and VK videos with cross-platform support"
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/equescodebelike/rutube_videoplayer
 repository: https://github.com/equescodebelike/rutube_videoplayer
 issue_tracker: https://github.com/equescodebelike/rutube_videoplayer/issues
