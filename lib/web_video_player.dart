@@ -38,7 +38,7 @@ class _WebVideoPlayerState extends State<WebVideoPlayer> {
   void _registerIframe() {
     viewType = 'iframeElement_${DateTime.now().millisecondsSinceEpoch}';
 
-    if (kIsWeb) {
+    if (kIsWeb || kIsWasm) {
       ui_web.platformViewRegistry.registerViewFactory(
         viewType,
         (int viewId) {

@@ -1,3 +1,8 @@
+## [1.0.2] - 2025-09-19
+
+### Added
+- Exeprimental WASM support
+
 ## [1.0.1] - 2025-09-3
 
 ### Added

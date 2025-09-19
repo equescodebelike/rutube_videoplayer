@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-import 'web_video_player_stub.dart' if (dart.library.html) 'web_video_player.dart';
+import 'web_video_player_stub.dart' if (dart.library.js_interop) 'web_video_player.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 bool isDirectVideoUrl(String url) {
